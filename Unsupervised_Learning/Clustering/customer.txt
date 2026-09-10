@@ -1,0 +1,13 @@
+Customer,Annual Income,Spending Score
+A,15,20
+B,18,25
+C,20,18
+D,22,30
+E,50,75
+F,55,80
+G,60,72
+H,65,85
+I,85,25
+J,90,20
+K,88,30
+L,95,28
