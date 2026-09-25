@@ -1,0 +1,5 @@
+This is a simple text file. It can contain any text you want.
+        For example : configuration settings : 
+        username : admin
+        password=password123
+This is a new content

@@ -1,0 +1,18 @@
+{
+    "name": "Alice",
+    "Age": 22,
+    "Address": {
+        "Street": "123 Main St",
+        "City": "New York"
+    },
+    "orders": [
+        {
+            "item": "Laptop",
+            "price": 120000
+        },
+        {
+            "item": "Mouse",
+            "price": 5000
+        }
+    ]
+}
