@@ -1,14 +1,14 @@
 # 🐍 Python AI & Machine Learning
 
-A comprehensive collection of **Python, Artificial Intelligence, Machine Learning, Data Science, and practical implementations** developed while learning and practicing AI/ML concepts.
+A comprehensive collection of **Python, Artificial Intelligence, Machine Learning, Deep Learning, Data Science, and practical implementations** developed while learning and practicing AI/ML concepts.
 
-This repository contains implementations, experiments, datasets, notebooks, and projects covering the complete journey from **Python fundamentals to Machine Learning algorithms**.
+This repository contains implementations, experiments, datasets, notebooks, and projects covering the learning journey from **Python fundamentals to Machine Learning and Deep Learning with TensorFlow/Keras**.
 
 ---
 
 ## 📌 Repository Overview
 
-The main goal of this repository is to build a strong foundation in **Python programming, Data Science, Artificial Intelligence, and Machine Learning** through hands-on implementation.
+The main goal of this repository is to build a strong foundation in **Python programming, Data Science, Artificial Intelligence, Machine Learning, and Deep Learning** through hands-on implementation.
 
 ### Topics Covered
 
@@ -23,8 +23,12 @@ The main goal of this repository is to build a strong foundation in **Python pro
 * 🧠 Association Rule Learning
 * 🎯 Model Evaluation
 * ⚙️ Hyperparameter Tuning
+* 🧬 Artificial Neural Networks
+* 🧠 Deep Learning
+* 🖼️ Convolutional Neural Networks
+* 👁️ Computer Vision
 * 📚 Machine Learning Projects
-* 🧪 Practical Experiments
+* 🧪 Practical AI/ML Experiments
 
 ---
 
@@ -81,9 +85,20 @@ Python-AI-ML/
 │   ├── Apriori/
 │   └── ECLAT/
 │
+├── Deep_Learning/
+│   ├── ANN/
+│   └── CNN/
+│
+├── Computer_Vision/
+│   └── Image_Classification/
+│       ├── Cat_Dog_Bird/
+│       └── ...
+│
 ├── Projects/
 │   ├── House_Price_Prediction/
 │   ├── Customer_Segmentation/
+│   ├── ANN_Classification/
+│   ├── CNN_Image_Classification/
 │   └── ...
 │
 ├── Datasets/
@@ -97,7 +112,7 @@ Python-AI-ML/
 
 # 🐍 Python
 
-Fundamental Python concepts required for Data Science and Machine Learning.
+Fundamental Python concepts required for Data Science, Machine Learning, and Artificial Intelligence.
 
 ### Topics
 
@@ -159,12 +174,13 @@ Including:
 * Scatter plots
 * Box plots
 * Heatmaps
+* Confusion Matrix Visualization
 
 ---
 
 # 🧹 Data Preprocessing
 
-Machine Learning models require clean and properly prepared data.
+Machine Learning and Deep Learning models require properly prepared data.
 
 This repository covers:
 
@@ -178,6 +194,10 @@ This repository covers:
 * Normalization
 * Feature Selection
 * Train-Test Split
+* Validation Split
+* Image Preprocessing
+* Image Resizing
+* Image Normalization
 
 ---
 
@@ -207,7 +227,7 @@ Algorithms implemented:
 
 ---
 
-## 🎯 Classification
+# 🎯 Classification
 
 Algorithms implemented:
 
@@ -279,9 +299,223 @@ Association Rule Learning is used to discover interesting relationships between 
 
 ---
 
+# 🧠 Deep Learning
+
+Deep Learning is a subset of Machine Learning that uses **artificial neural networks with multiple layers** to learn complex patterns from data.
+
+The repository includes practical implementations using **TensorFlow and Keras**.
+
+---
+
+## 🧬 Artificial Neural Networks (ANN)
+
+Artificial Neural Networks are used for learning complex relationships between input features and target variables.
+
+### Concepts Covered
+
+* Neural Network Architecture
+* Input Layer
+* Hidden Layers
+* Output Layer
+* Neurons
+* Weights & Bias
+* Activation Functions
+* Forward Propagation
+* Backpropagation
+* Loss Functions
+* Optimizers
+* Epochs
+* Batch Size
+* Training & Validation
+* Model Evaluation
+
+### Activation Functions
+
+* ReLU
+* Sigmoid
+* Softmax
+
+### Optimizers
+
+* Adam
+* SGD
+
+### ANN Workflow
+
+```text
+Dataset
+   ↓
+Data Preprocessing
+   ↓
+Train-Test Split
+   ↓
+Training / Validation Split
+   ↓
+Feature Scaling
+   ↓
+Build ANN Model
+   ↓
+Compile Model
+   ↓
+Train Model
+   ↓
+Validation
+   ↓
+Testing
+   ↓
+Prediction
+   ↓
+Model Evaluation
+```
+
+---
+
+# 🖼️ Convolutional Neural Networks (CNN)
+
+Convolutional Neural Networks are specialized Deep Learning architectures widely used for **image processing and computer vision**.
+
+### CNN Concepts Covered
+
+* Image Data
+* Image Resizing
+* Image Normalization
+* Convolution Operation
+* Filters / Kernels
+* Feature Maps
+* Stride
+* Padding
+* ReLU Activation
+* Pooling
+* Max Pooling
+* Flatten Layer
+* Dense Layers
+* Softmax Classification
+* CNN Architecture
+* Training & Validation
+* Model Evaluation
+
+### CNN Architecture
+
+```text
+Input Image
+     ↓
+Convolution Layer
+     ↓
+ReLU Activation
+     ↓
+Pooling Layer
+     ↓
+Convolution Layer
+     ↓
+ReLU Activation
+     ↓
+Pooling Layer
+     ↓
+Flatten
+     ↓
+Dense Layer
+     ↓
+Output Layer
+     ↓
+Class Prediction
+```
+
+---
+
+# 🐱🐶🐦 CNN Image Classification
+
+A practical CNN image classification implementation for classifying images into multiple categories.
+
+### Classes
+
+* 🐱 Cat
+* 🐶 Dog
+* 🐦 Bird
+
+### Workflow
+
+```text
+Image Dataset
+      ↓
+Load Images
+      ↓
+Resize Images
+      ↓
+Normalize Pixel Values
+      ↓
+Training / Validation Split
+      ↓
+Build CNN
+      ↓
+Compile Model
+      ↓
+Train Model
+      ↓
+Validate Model
+      ↓
+Test Model
+      ↓
+Prediction
+      ↓
+Confusion Matrix
+      ↓
+Classification Evaluation
+```
+
+### Technologies Used
+
+* Python
+* TensorFlow
+* Keras
+* NumPy
+* Matplotlib
+* Seaborn
+
+### Evaluation
+
+The CNN model is evaluated using:
+
+* Training Accuracy
+* Validation Accuracy
+* Training Loss
+* Validation Loss
+* Test Accuracy
+* Confusion Matrix
+* Classification Report
+* Individual Image Prediction
+
+---
+
+# 👁️ Computer Vision
+
+Deep Learning techniques are applied to image-based problems.
+
+### Topics Covered
+
+* Image Classification
+* Image Preprocessing
+* CNN
+* Feature Extraction
+* Image Resizing
+* Pixel Normalization
+* Multi-Class Classification
+* Model Prediction
+
+### Current Classification Task
+
+```text
+Cat ──┐
+      │
+Dog ──┼──→ CNN ──→ Predicted Class
+      │
+Bird ─┘
+```
+
+---
+
 # ⚙️ Machine Learning Workflow
 
-The general workflow followed in this repository is:
+The general Machine Learning workflow followed in this repository is:
 
 ```text
              Dataset
@@ -305,6 +539,32 @@ The general workflow followed in this repository is:
       Hyperparameter Tuning
                 ↓
         Final Prediction
+```
+
+For Deep Learning projects, the workflow additionally includes:
+
+```text
+Dataset
+   ↓
+Preprocessing
+   ↓
+Train / Test Split
+   ↓
+Training / Validation Split
+   ↓
+Model Architecture
+   ↓
+Model Compilation
+   ↓
+Training
+   ↓
+Validation
+   ↓
+Testing
+   ↓
+Prediction
+   ↓
+Evaluation
 ```
 
 ---
@@ -350,6 +610,44 @@ Customer data is analyzed using machine learning techniques to identify groups o
 
 ---
 
+## 🧠 ANN Classification
+
+A Deep Learning classification model built using an Artificial Neural Network.
+
+### Concepts Used
+
+* Feature Scaling
+* ANN Architecture
+* Dense Layers
+* Activation Functions
+* Adam Optimizer
+* Model Training
+* Validation
+* Testing
+* Confusion Matrix
+* Classification Metrics
+
+---
+
+## 🖼️ CNN Image Classification
+
+A Convolutional Neural Network project for classifying images into **Cat, Dog, and Bird** categories.
+
+### Concepts Used
+
+* Image Preprocessing
+* CNN
+* Convolution Layers
+* Pooling Layers
+* Flatten Layer
+* Dense Layers
+* Multi-Class Classification
+* Training & Validation
+* Test Prediction
+* Confusion Matrix
+
+---
+
 # 🛠️ Technologies & Libraries
 
 ### Programming Language
@@ -371,6 +669,11 @@ Customer data is analyzed using machine learning techniques to identify groups o
 
 * Scikit-learn
 * MLxtend
+
+### Deep Learning
+
+* TensorFlow
+* Keras
 
 ### Development Environment
 
@@ -439,6 +742,8 @@ seaborn
 scikit-learn
 scipy
 mlxtend
+tensorflow
+keras
 jupyter
 ```
 
@@ -455,7 +760,7 @@ Understand Mathematics
      ↓
 Implement from Scratch
      ↓
-Use Scikit-learn
+Use Libraries
      ↓
 Test on Dataset
      ↓
@@ -466,7 +771,31 @@ Compare Algorithms
 Build Project
 ```
 
-The focus is not only on using libraries, but also on understanding **how and why different algorithms work**.
+For Deep Learning:
+
+```text
+Understand Neural Networks
+          ↓
+Learn ANN
+          ↓
+Understand Forward Propagation
+          ↓
+Understand Backpropagation
+          ↓
+Train ANN
+          ↓
+Learn CNN
+          ↓
+Understand Convolution
+          ↓
+Understand Pooling
+          ↓
+Build CNN
+          ↓
+Image Classification
+```
+
+The focus is not only on using libraries, but also on understanding **how and why different algorithms and architectures work**.
 
 ---
 
@@ -480,6 +809,10 @@ The main objectives of this repository are:
 * Practice data preprocessing
 * Understand model evaluation
 * Compare different ML algorithms
+* Learn Artificial Neural Networks
+* Understand Deep Learning fundamentals
+* Learn Convolutional Neural Networks
+* Practice Computer Vision
 * Work with real-world datasets
 * Build practical AI/ML projects
 * Develop problem-solving skills
@@ -491,18 +824,19 @@ The main objectives of this repository are:
 
 Planned additions include:
 
-* Deep Learning
-* TensorFlow
-* PyTorch
-* Artificial Neural Networks
-* CNN
+* Advanced Deep Learning
+* Advanced CNN Architectures
+* Transfer Learning
+* Data Augmentation
 * RNN
 * LSTM
+* GRU
 * Natural Language Processing
-* Computer Vision
+* Computer Vision Projects
 * Generative AI
 * Model Deployment
 * Flask / FastAPI
+* Streamlit
 * MLOps
 * End-to-End AI/ML Projects
 
@@ -510,23 +844,30 @@ Planned additions include:
 
 # 📈 Progress
 
-| Area                  | Status                   |
-| --------------------- | ------------------------ |
-| Python                | ✅ Completed / Practicing |
-| NumPy                 | ✅                        |
-| Pandas                | ✅                        |
-| Data Visualization    | ✅                        |
-| Data Preprocessing    | ✅                        |
-| Regression            | ✅                        |
-| Classification        | ✅                        |
-| Clustering            | ✅                        |
-| Association Rules     | ✅                        |
-| Model Evaluation      | ✅                        |
-| Hyperparameter Tuning | 🔄                       |
-| Deep Learning         | 🔄                       |
-| NLP                   | 🔄                       |
-| Computer Vision       | 🔄                       |
-| MLOps                 | 🔄                       |
+| Area                       | Status                   |
+| -------------------------- | ------------------------ |
+| Python                     | ✅ Completed / Practicing |
+| NumPy                      | ✅                        |
+| Pandas                     | ✅                        |
+| Data Visualization         | ✅                        |
+| Data Preprocessing         | ✅                        |
+| Regression                 | ✅                        |
+| Classification             | ✅                        |
+| Clustering                 | ✅                        |
+| Association Rules          | ✅                        |
+| Model Evaluation           | ✅                        |
+| Hyperparameter Tuning      | 🔄                       |
+| Artificial Neural Networks | ✅                        |
+| Deep Learning Fundamentals | ✅                        |
+| CNN                        | ✅                        |
+| Image Classification       | ✅                        |
+| Computer Vision            | 🔄                       |
+| NLP                        | 🔄                       |
+| RNN / LSTM                 | ⏳                        |
+| Transfer Learning          | ⏳                        |
+| Generative AI              | ⏳                        |
+| Model Deployment           | ⏳                        |
+| MLOps                      | ⏳                        |
 
 ---
 
@@ -557,7 +898,9 @@ Interested in:
 * Python
 * Machine Learning
 * Artificial Intelligence
+* Deep Learning
 * Data Science
+* Computer Vision
 * Full Stack Development
 
 ---
